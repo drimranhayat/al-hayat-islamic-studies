@@ -1,0 +1,12 @@
+AL-HAYAT — GITHUB QUICK START
+
+1. Extract the ZIP.
+2. Upload this folder's CONTENTS to the root of your GitHub repository.
+3. Make sure .github/workflows/pages.yml is included.
+4. GitHub Settings > Pages > Source > GitHub Actions.
+5. Actions > Publish Al-Hayat to GitHub Pages > Run workflow.
+
+Local preview: npm run dev
+Open: http://localhost:3000
+
+Complete instructions: README.md

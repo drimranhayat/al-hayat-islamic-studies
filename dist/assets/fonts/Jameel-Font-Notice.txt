@@ -1,0 +1,8 @@
+Jameel Noori Nastaleeq
+Embedded font name: Jameel Noori Nastaleeq
+Font's embedded notice: "This Font Is Free Of Charge For Urdu Lovers"
+Source copy: https://github.com/tariq-abdullah/urdu-web-font-CDN/blob/main/JameelNooriNastaleeq.woff
+The font remains the work of its respective creators. No SIL Open Font License or MIT license is asserted for this font.
+Amiri and Noto fonts retain their separately supplied SIL Open Font License notices.
+
+The WOFF2 copy is a lossless container conversion; glyphs and OpenType shaping tables are preserved.
