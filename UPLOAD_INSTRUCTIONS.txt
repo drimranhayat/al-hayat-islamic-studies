@@ -1,0 +1,18 @@
+GITHUB PAGES ROOT FIX
+
+The learning app is already available at:
+https://drimranhayat.github.io/al-hayat-islamic-studies/dist/
+
+To make your main website address open the app:
+
+1. Extract this ZIP.
+2. Open your al-hayat-islamic-studies repository on GitHub.
+3. Stay at the repository root, where README.md and the dist folder are listed.
+4. Choose Add file > Upload files.
+5. Upload index.html from this ZIP directly beside README.md. Do not put it inside dist or inside another new folder.
+6. Commit the upload to the branch your GitHub Pages site currently publishes.
+7. After GitHub finishes deploying, refresh the main website address.
+
+The new root index.html redirects to the existing dist app and preserves question bookmarks in the URL. No educational content or saved progress is changed.
+
+Alternative: Use the included GitHub Actions workflow by selecting GitHub Actions as the Pages source, then running the Publish Al-Hayat workflow. That publishes dist directly at the main address. The small index.html fix is sufficient for your current branch-based publication.
