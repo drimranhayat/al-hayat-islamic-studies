@@ -24,3 +24,56 @@ body{font-size:19px;line-height:2.05}.topbar{min-height:83px;height:auto;padding
 .main-nav a{font-size:20px}.subject-nav a{font-size:19px}.side-label{font-size:16px}.reader-outline .outline-question{font-size:19px}.outline-scroll summary{font-size:18px}.outline-dialog .outline-question{font-size:21px}.outline-dialog summary{font-size:20px}.global-search{font-size:18px}.question-kicker{font-size:16px}.reader-meta{font-size:16px}.subject-nav small{font-family:ArabicUI;font-size:12px}.main-nav a{min-height:47px}.side-progress{font-size:16px}.side-bottom p{font-size:15px}.side-author{font-size:17px}.side-author span{font-size:15px}
 @media(max-width:760px){.question-kicker{font-size:15px}.reader-meta{font-size:15px}.global-search{font-size:16px}.reader-meta .pill{font-size:15px}.sidebar{width:265px}}
 @media print{html[data-theme=dark] body,html[data-theme=dark] .reader-card{background:#fff!important}html[data-theme=dark] .answer-text,html[data-theme=dark] .answer-text mark,html[data-theme=dark] .reader-question h1{color:#111!important}html[data-theme=dark] .answer-text strong.arabic-quote,strong.arabic-quote{color:#163e78!important;background:#eef3fc!important}.back-to-top{display:none!important}}
+/* Compact reading chrome; preserve whole Arabic-script words and natural shaping. */
+body,h1,h2,h3,p,a,button,summary,span{letter-spacing:normal}
+.answer-text,.reader-question h1,.practice-card h1,.row-text,.outline-question{word-break:normal;overflow-wrap:break-word;hyphens:none}
+.answer-text .arabic-quote{word-break:normal;overflow-wrap:normal;white-space:normal}
+.is-reading .topbar{height:58px;min-height:58px;padding-block:5px}
+.is-reading #main{padding-top:14px}
+.reader-top{margin-bottom:12px;gap:10px;min-width:0}
+.reader-top-actions{gap:6px;flex-shrink:0}
+.reader-top-actions .btn{padding:5px 10px;min-height:40px}
+.reader-layout{grid-template-columns:minmax(0,1fr) 250px;gap:18px;align-items:start}
+.reader-card{min-width:0;padding:20px 24px}
+.reader-meta{padding-bottom:7px;margin-bottom:0;gap:8px;line-height:1.9;font-size:15px;flex-wrap:wrap}
+.reader-meta .pill{font-size:14px;padding:1px 8px}
+.reader-question{position:relative;padding-inline-end:36px}
+.reader-question .question-tools{position:absolute;inset-inline-end:0;top:0;margin:0;padding:0}
+.reader-question .question-kicker{display:none}
+.reader-question h1{font-size:28px;line-height:1.95;margin:4px 0 10px}
+.answer-heading{margin:0 0 8px;gap:8px;min-height:32px;font-size:15px}
+.answer-heading .icon-button{height:34px;width:34px}
+.answer-text p{margin-bottom:22px}
+.answer-text p:last-child{margin-bottom:0}
+.reader-pagination{margin:12px 0 18px;padding:10px 0 0;border-top:0;gap:8px;flex-wrap:wrap}
+.reader-pagination .btn{min-height:44px;padding:7px 13px;font-size:17px}
+.reader-pagination>span{font-family:ArabicUI,sans-serif;font-size:12px}
+.references{margin:10px 0 14px}
+.references summary{padding-block:7px}
+.recall-prompt{margin-top:16px;padding:12px 15px}
+.self-assess{margin-top:16px;padding-top:14px}
+.notes-panel{margin-top:14px}
+.reader-outline{top:76px;max-height:calc(100dvh - 92px)}
+@media(max-width:1100px){.reader-layout{grid-template-columns:minmax(0,1fr) 220px;gap:14px}.reader-card{padding:18px 20px}}
+@media(max-width:1000px){.reader-layout{display:block}.reader-outline{display:none}}
+@media(max-width:760px){
+ .is-reading .topbar{min-height:54px;height:54px;padding-block:4px}
+ .is-reading #main{padding:10px 10px 30px}
+ .reader-top{margin-bottom:9px;align-items:center;gap:6px}
+ .reader-top .breadcrumb{font-size:15px;max-width:47%;line-height:1.8}
+ .reader-top-actions .btn{padding:4px 7px;min-height:40px;font-size:14px;gap:5px}
+ .reader-top-actions .icon-button{width:34px;height:40px}
+ .reader-top-actions #focus-toggle .icon{display:none}
+ .reader-top-actions #focus-toggle span{display:inline;font-size:14px}
+ .reader-card{padding:14px 16px;border-radius:12px}
+ .reader-meta{font-size:14px;padding-bottom:4px;justify-content:space-between}
+ .reader-meta .pill{font-size:13px;max-width:65%}
+ .reader-question h1{font-size:25px;line-height:1.95;margin-top:2px;margin-bottom:8px}
+ .answer-heading{margin-bottom:6px}
+ .answer-text{line-height:2.2}
+ .reader-pagination{justify-content:space-between;margin-top:10px}
+ .reader-pagination .btn{font-size:17px;padding-inline:10px}
+ .reader-pagination>span{font-size:11px}
+ .self-assess .btn{white-space:normal}
+}
+@media(max-width:350px){.reader-top .breadcrumb{max-width:39%;font-size:14px}.reader-top-actions{gap:2px}.reader-top-actions .btn{padding-inline:5px}.reader-card{padding-inline:12px}.reader-pagination>span{display:none}}

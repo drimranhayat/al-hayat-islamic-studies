@@ -1,12 +1,12 @@
 {
   "name": "al-hayat-islamic-studies",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": true,
-  "description": "Urdu learning and interview preparation \u2014 470 discussions across eight subjects.",
+  "description": "Urdu learning and interview preparation — 470 discussions across eight subjects.",
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "build": "python scripts/build.py",
-    "check": "node --check dist/app.js && python scripts/validate.py"
+    "check": "node --check dist/app.js && python scripts/validate.py && node scripts/check-reading.mjs"
   },
   "engines": {
     "node": ">=18"

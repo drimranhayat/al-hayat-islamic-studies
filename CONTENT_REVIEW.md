@@ -34,3 +34,13 @@ The eight-subject structure remains intact. The library now contains **470 quest
 ## Verification
 
 The validation script checks all 470 question IDs, the correspondence between source JSON and browser content, Arabic span matching, and required assets. Browser checks cover font rendering, quotation styling and primary reading controls. The two newly added Seerah discussions include direct references to relevant authentic hadith reports; the educational content remains an academic study aid rather than an independently issued fatwa.
+
+## Revision 3: contextual evidence and reading layout
+
+29 answers across all eight subjects now contain additional Arabic evidence or a classical definition, an original Urdu translation, a source citation and an explanation of its relevance. Quotations are identified as excerpts where applicable. The selected Qur'anic passages were checked against Quran.com, the hadith against their cited Bukhari/Muslim records on Sunnah.com, and the fiqh definition against the cited passage of al-Ibhaj on Shamela. These checks concern the new passages, rather than certifying every interpretation or bibliographic item in the entire collection.
+
+12 further answers received worked examples. Hypothetical hadith transmission examples are explicitly identified as such, rather than presented as historical reports. The question-level revision list is in CONTENT_ENRICHMENT.json.
+
+The reader header and metadata are more compact. Previous/next navigation appears immediately after the final answer paragraph, before references and study controls. Arabic quotations retain Amiri Bold and their distinct colour; Urdu remains Jameel Noori Nastaleeq. Highlighting respects complete Unicode words and combining marks, preventing inserted tags from splitting Urdu ligatures. Whole-word wrapping replaces arbitrary character wrapping in reading text.
+
+Regression checks exercise the actual text renderer, word-boundary cases, Arabic annotation and answer-end navigation. All 470 IDs and original question identities are retained. Responsive CSS includes narrow-phone layouts; browser-based visual verification was unavailable during this revision, so device-wide rendering is not certified.

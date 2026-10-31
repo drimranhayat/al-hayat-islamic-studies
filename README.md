@@ -96,3 +96,9 @@ Font notices and the applicable open-font licenses are supplied in `dist/assets/
 ## Editorial revision 2.0
 
 See `CONTENT_REVIEW.md` for the focused content and usability changes. Arabic quotations use explicit `arabic_spans` metadata, keeping Urdu prose in Jameel rather than guessing the language from a shared alphabet.
+
+### Revision 3
+
+Adds contextual Arabic evidence with Urdu translations to 29 answers and worked examples to 12 further answers. Reading controls are more compact, next-question navigation follows the answer directly, and highlighting preserves complete Urdu words. See CONTENT_REVIEW.md and CONTENT_ENRICHMENT.json for the scope of the revision.
+
+The root index.html redirects branch-based GitHub Pages hosting to dist/. Upload the complete project contents when replacing the earlier repository; the separate dist/ directory remains the deployed app. Run npm run build and npm run check after content edits.
